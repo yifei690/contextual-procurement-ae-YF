@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "covrisk-procurement"
+version = "0.1.0"
+description = "Modular joint forecasting and risk-averse conditional DRO procurement"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.12", "pandas>=2.1", "torch>=2.2",
+ "scikit-learn>=1.4", "PyYAML>=6", "requests>=2.31", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+gurobi = ["gurobipy>=11"]
+open = ["highspy>=1.7"]
+dev = ["pytest>=8", "build"]
+
+[project.scripts]
+covrisk = "covrisk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

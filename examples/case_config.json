@@ -1,0 +1,84 @@
+{
+  "date": "2026-04-06",
+  "seed": 43,
+  "scenario": "base",
+  "risk": {
+    "rho": 0.3,
+    "alpha": [
+      0.9,
+      0.95
+    ],
+    "beta": [
+      0.5,
+      0.5
+    ]
+  },
+  "methods": {
+    "H-DRO": {
+      "plant": {
+        "import_max": 2.5,
+        "export_max": 1.0,
+        "da_max": 2.5,
+        "id_max": 1.0,
+        "charge_max": 0.5,
+        "discharge_max": 0.5,
+        "energy_min": 0.2,
+        "energy_max": 2.0,
+        "initial_energy": 1.0,
+        "terminal_energy": 1.0,
+        "eta_c": 0.95,
+        "eta_d": 0.95,
+        "flexible_fraction": 0.1,
+        "degradation_eur_mwh": 10.0,
+        "curtailment_eur_mwh": 0.0,
+        "voll_eur_mwh": 10000.0
+      },
+      "recorded_day_ahead_objective_keur": -0.050589979290163206,
+      "original_result_sha256": "722451c186df0339d3042be1279483914930f40b517d83a28abbb5a06384b407"
+    },
+    "X-PTO": {
+      "plant": {
+        "import_max": 2.5,
+        "export_max": 1.0,
+        "da_max": 2.5,
+        "id_max": 1.0,
+        "charge_max": 0.5,
+        "discharge_max": 0.5,
+        "energy_min": 0.2,
+        "energy_max": 2.0,
+        "initial_energy": 1.0,
+        "terminal_energy": 1.0,
+        "eta_c": 0.95,
+        "eta_d": 0.95,
+        "flexible_fraction": 0.1,
+        "degradation_eur_mwh": 10.0,
+        "curtailment_eur_mwh": 0.0,
+        "voll_eur_mwh": 10000.0
+      },
+      "recorded_day_ahead_objective_keur": -1.0967910168975683,
+      "original_result_sha256": "c99980cd51cecaa81c90b88b68167b64dff3aeb3a788370f490a725f2aed56cc"
+    },
+    "X-JPO": {
+      "plant": {
+        "import_max": 2.5,
+        "export_max": 1.0,
+        "da_max": 2.5,
+        "id_max": 1.0,
+        "charge_max": 0.5,
+        "discharge_max": 0.5,
+        "energy_min": 0.2,
+        "energy_max": 2.0,
+        "initial_energy": 1.0,
+        "terminal_energy": 1.0,
+        "eta_c": 0.95,
+        "eta_d": 0.95,
+        "flexible_fraction": 0.1,
+        "degradation_eur_mwh": 10.0,
+        "curtailment_eur_mwh": 0.0,
+        "voll_eur_mwh": 10000.0
+      },
+      "recorded_day_ahead_objective_keur": -1.1546696549416997,
+      "original_result_sha256": "3fc988019636b5329a4509062fcbe04bdc915577487ec0053c9bc25afbfd67ca"
+    }
+  }
+}

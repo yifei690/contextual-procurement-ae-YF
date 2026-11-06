@@ -2,7 +2,7 @@
 
 This repository provides the core Python implementation for contextual, risk-aware electricity procurement with storage and a compact, single-day numerical case.
 
-The example uses 24 hourly records from 2026-04-06 (seed 43, base scenario) for H-DRO, X-PTO, and X-JPO. The archived trajectories and costs are derived from a completed evaluation. `examples/show_case.py` checks the hourly record counts and reconciles each hourly cost sum with the archived daily total. It does not retrain a predictor or rerun the optimizer.
+The example uses 24 hourly records from 2026-04-06 (base scenario) for H-DRO, X-PTO, and X-JPO. The archived trajectories and costs are derived from a completed evaluation. `examples/show_case.py` checks the hourly record counts and reconciles each hourly cost sum with the archived daily total. It does not retrain a predictor or rerun the optimizer.
 
 ## Run
 

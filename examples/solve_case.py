@@ -19,7 +19,7 @@ def main():
     config = json.loads((folder / "case_config.json").read_text(encoding="utf-8"))
     risk = RiskSpec(**config["risk"])
     print("Frozen day-ahead optimization | 2026-04-06 | seed 43 | SciPy/HiGHS")
-    with np.load(folder / "seed43_2026-04-06_day_ahead.npz", allow_pickle=False) as data:
+    with np.load(folder / "case_2026-04-06_day_ahead.npz", allow_pickle=False) as data:
         for method, settings in config["methods"].items():
             tree = ScenarioTree(data[method + "_pre"], data[method + "_post"])
             tree.validate()

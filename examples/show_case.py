@@ -6,8 +6,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-TRAJECTORY = ROOT / "seed43_2026-04-06.csv"
-SUMMARY = ROOT / "seed43_2026-04-06_summary.csv"
+TRAJECTORY = ROOT / "case_2026-04-06.csv"
+SUMMARY = ROOT / "case_2026-04-06_summary.csv"
 METHODS = ("H-DRO", "X-PTO", "X-JPO")
 
 
